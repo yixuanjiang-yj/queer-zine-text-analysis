@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ecf7b1849c790f54062df6c955de52e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 30px; left: 30px; z-index: 1000;
+     background-color: white; padding: 15px; border-radius: 8px;
+     box-shadow: 2px 2px 6px rgba(0,0,0,0.3); font-family: Arial; font-size: 13px;">
+     <b style="font-size:14px;">QZAP Zines</b><br><br>
+     <span style="color:red;">&#9679;</span> behind the bars<br>
+     <span style="color:orange;">&#9679;</span> doris 21<br>
+     <span style="color:gold;">&#9679;</span> empty orchestra 1<br>
+     <span style="color:green;">&#9679;</span> gaysi 1<br>
+     <span style="color:lightblue;">&#9679;</span> gender trash 1<br>
+     <span style="color:blue;">&#9679;</span> going homo 3<br>
+     <span style="color:purple;">&#9679;</span> queer zine explosion 20<br>
+     <span style="color:pink;">&#9679;</span> the anarchistic queer 1.1<br>
+     <span style="color:gray;">&#9679;</span> timtum - a trans jew zine<br>
+     <span style="color:brown;">&#9679;</span> we have always existed transgender people through history
+</div>
+    
+            <div class="folium-map" id="map_6ecf7b1849c790f54062df6c955de52e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ecf7b1849c790f54062df6c955de52e = L.map(
+                "map_6ecf7b1849c790f54062df6c955de52e",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_36714df6ae468ceb2e4a4c9742214750 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_36714df6ae468ceb2e4a4c9742214750.addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+            var circle_marker_008d85fa15e91b6a85eeb247018a2538 = L.circleMarker(
+                [45.5112811, -122.6653763],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_afe0c1da7f8164cab0836e1ff384fef8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_af9d3403bf2f0c5d3f20127317e37665 = $(`<div id="html_af9d3403bf2f0c5d3f20127317e37665" style="width: 100.0%; height: 100.0%;"><b>Southeast Portland</b><br><i>behind the bars</i> (2006)</div>`)[0];
+                popup_afe0c1da7f8164cab0836e1ff384fef8.setContent(html_af9d3403bf2f0c5d3f20127317e37665);
+            
+        
+
+        circle_marker_008d85fa15e91b6a85eeb247018a2538.bindPopup(popup_afe0c1da7f8164cab0836e1ff384fef8)
+        ;
+
+        
+    
+    
+            var circle_marker_a576792ac1665dc1f73256a59a77aa36 = L.circleMarker(
+                [19.5938015, -155.4283701],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_37e0e1c3e31cfd0a314308fc14a9935e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_050bfe8b26cb4a8629f30eaa5e73ffdc = $(`<div id="html_050bfe8b26cb4a8629f30eaa5e73ffdc" style="width: 100.0%; height: 100.0%;"><b>Hawaii</b><br><i>behind the bars</i> (2006)</div>`)[0];
+                popup_37e0e1c3e31cfd0a314308fc14a9935e.setContent(html_050bfe8b26cb4a8629f30eaa5e73ffdc);
+            
+        
+
+        circle_marker_a576792ac1665dc1f73256a59a77aa36.bindPopup(popup_37e0e1c3e31cfd0a314308fc14a9935e)
+        ;
+
+        
+    
+    
+            var circle_marker_9c24274a396f1f6245ad34fdd14a68f6 = L.circleMarker(
+                [36.7014631, -118.755997],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_a77712d41a94c6be5719b49d5b14db32 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7edf240236126330d2b614af1f74923c = $(`<div id="html_7edf240236126330d2b614af1f74923c" style="width: 100.0%; height: 100.0%;"><b>California</b><br><i>behind the bars</i> (2006)</div>`)[0];
+                popup_a77712d41a94c6be5719b49d5b14db32.setContent(html_7edf240236126330d2b614af1f74923c);
+            
+        
+
+        circle_marker_9c24274a396f1f6245ad34fdd14a68f6.bindPopup(popup_a77712d41a94c6be5719b49d5b14db32)
+        ;
+
+        
+    
+    
+            var circle_marker_e22b13d70754fc745d2423778cd1807e = L.circleMarker(
+                [38.27312, -98.5821872],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_8378804d4e82a286561a8a83c00315ae = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a3cc5cc1a7c6ae3bf5fca9d08d680558 = $(`<div id="html_a3cc5cc1a7c6ae3bf5fca9d08d680558" style="width: 100.0%; height: 100.0%;"><b>Kansas</b><br><i>behind the bars</i> (2006)</div>`)[0];
+                popup_8378804d4e82a286561a8a83c00315ae.setContent(html_a3cc5cc1a7c6ae3bf5fca9d08d680558);
+            
+        
+
+        circle_marker_e22b13d70754fc745d2423778cd1807e.bindPopup(popup_8378804d4e82a286561a8a83c00315ae)
+        ;
+
+        
+    
+    
+            var circle_marker_561492f57348bbb25a812d9ac433e498 = L.circleMarker(
+                [43.9792797, -120.737257],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_8e90cd41c71fb7401a7483a24f9b505f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2125877af3ad293236935b4250aefbf9 = $(`<div id="html_2125877af3ad293236935b4250aefbf9" style="width: 100.0%; height: 100.0%;"><b>Oregon</b><br><i>behind the bars</i> (2006)</div>`)[0];
+                popup_8e90cd41c71fb7401a7483a24f9b505f.setContent(html_2125877af3ad293236935b4250aefbf9);
+            
+        
+
+        circle_marker_561492f57348bbb25a812d9ac433e498.bindPopup(popup_8e90cd41c71fb7401a7483a24f9b505f)
+        ;
+
+        
+    
+    
+            var circle_marker_ff4ec35f5ca353a472d77c3ec1a1f1ba = L.circleMarker(
+                [45.5202471, -122.674194],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_70dce3505e03dee6709768feec9fb99f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4abda501d4e0a8056a823e8e139f6433 = $(`<div id="html_4abda501d4e0a8056a823e8e139f6433" style="width: 100.0%; height: 100.0%;"><b>Portland</b><br><i>behind the bars</i> (2006)</div>`)[0];
+                popup_70dce3505e03dee6709768feec9fb99f.setContent(html_4abda501d4e0a8056a823e8e139f6433);
+            
+        
+
+        circle_marker_ff4ec35f5ca353a472d77c3ec1a1f1ba.bindPopup(popup_70dce3505e03dee6709768feec9fb99f)
+        ;
+
+        
+    
+    
+            var circle_marker_dc1792acda0ef657ca1c30b1a450b0a1 = L.circleMarker(
+                [48.4095949, 7.234863],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_9ea646b9a1777bedae5f4f63533da785 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e1d8cd02da141cb3cbe8a24792b93676 = $(`<div id="html_e1d8cd02da141cb3cbe8a24792b93676" style="width: 100.0%; height: 100.0%;"><b>Belmont</b><br><i>behind the bars</i> (2006)</div>`)[0];
+                popup_9ea646b9a1777bedae5f4f63533da785.setContent(html_e1d8cd02da141cb3cbe8a24792b93676);
+            
+        
+
+        circle_marker_dc1792acda0ef657ca1c30b1a450b0a1.bindPopup(popup_9ea646b9a1777bedae5f4f63533da785)
+        ;
+
+        
+    
+    
+            var circle_marker_5cd61376af77c54d822830ce9467704e = L.circleMarker(
+                [15.5855545, -90.345759],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_2e5abb4c9ca92129afc0080d7450618c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5a8d16a14b785f247427bff190de566a = $(`<div id="html_5a8d16a14b785f247427bff190de566a" style="width: 100.0%; height: 100.0%;"><b>Guatemala</b><br><i>doris 21</i> (2003)</div>`)[0];
+                popup_2e5abb4c9ca92129afc0080d7450618c.setContent(html_5a8d16a14b785f247427bff190de566a);
+            
+        
+
+        circle_marker_5cd61376af77c54d822830ce9467704e.bindPopup(popup_2e5abb4c9ca92129afc0080d7450618c)
+        ;
+
+        
+    
+    
+            var circle_marker_ccae9f3aff747e99c1fa953e8d5b5473 = L.circleMarker(
+                [64.6863136, 97.7453061],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_1f131c9b0a5b6e841413aaf15eb380fe = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_15a9ea3d8e40b45e46ef8394c28674d9 = $(`<div id="html_15a9ea3d8e40b45e46ef8394c28674d9" style="width: 100.0%; height: 100.0%;"><b>Russia</b><br><i>doris 21</i> (2003)</div>`)[0];
+                popup_1f131c9b0a5b6e841413aaf15eb380fe.setContent(html_15a9ea3d8e40b45e46ef8394c28674d9);
+            
+        
+
+        circle_marker_ccae9f3aff747e99c1fa953e8d5b5473.bindPopup(popup_1f131c9b0a5b6e841413aaf15eb380fe)
+        ;
+
+        
+    
+    
+            var circle_marker_6df907b3b99f0c5a4aeea5f7cc657dca = L.circleMarker(
+                [45.1685441, 8.0902162],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_ffbc678e9361fd3eebd52302e31d9eef = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b376543ca63b58c9774792c4ebc400ad = $(`<div id="html_b376543ca63b58c9774792c4ebc400ad" style="width: 100.0%; height: 100.0%;"><b>Siberia</b><br><i>doris 21</i> (2003)</div>`)[0];
+                popup_ffbc678e9361fd3eebd52302e31d9eef.setContent(html_b376543ca63b58c9774792c4ebc400ad);
+            
+        
+
+        circle_marker_6df907b3b99f0c5a4aeea5f7cc657dca.bindPopup(popup_ffbc678e9361fd3eebd52302e31d9eef)
+        ;
+
+        
+    
+    
+            var circle_marker_c62948c0d2196f75c86df9fece19f183 = L.circleMarker(
+                [14.6416142, -90.5132836],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_0d260dd1ac1324321a1db29baaff195e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e1aff299bf37bc8103674eaf7fa4fcde = $(`<div id="html_e1aff299bf37bc8103674eaf7fa4fcde" style="width: 100.0%; height: 100.0%;"><b>Guatemala City</b><br><i>doris 21</i> (2003)</div>`)[0];
+                popup_0d260dd1ac1324321a1db29baaff195e.setContent(html_e1aff299bf37bc8103674eaf7fa4fcde);
+            
+        
+
+        circle_marker_c62948c0d2196f75c86df9fece19f183.bindPopup(popup_0d260dd1ac1324321a1db29baaff195e)
+        ;
+
+        
+    
+    
+            var circle_marker_c959eccbef110401aced3fd876392e69 = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_b76be2c5a42e6da67a0123c4fda0e999 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ee1945ab56935b6f11455f4e846cfa6b = $(`<div id="html_ee1945ab56935b6f11455f4e846cfa6b" style="width: 100.0%; height: 100.0%;"><b>United States</b><br><i>doris 21</i> (2003)</div>`)[0];
+                popup_b76be2c5a42e6da67a0123c4fda0e999.setContent(html_ee1945ab56935b6f11455f4e846cfa6b);
+            
+        
+
+        circle_marker_c959eccbef110401aced3fd876392e69.bindPopup(popup_b76be2c5a42e6da67a0123c4fda0e999)
+        ;
+
+        
+    
+    
+            var circle_marker_db677d8e94a51277ff156d152063d88f = L.circleMarker(
+                [38.0464066, -84.4970393],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_fef485f9a3ec37eb52575923bff6228a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b6a96c54ecad5195fdb90e996330e2f3 = $(`<div id="html_b6a96c54ecad5195fdb90e996330e2f3" style="width: 100.0%; height: 100.0%;"><b>Lexington</b><br><i>empty orchestra 1</i> (2012)</div>`)[0];
+                popup_fef485f9a3ec37eb52575923bff6228a.setContent(html_b6a96c54ecad5195fdb90e996330e2f3);
+            
+        
+
+        circle_marker_db677d8e94a51277ff156d152063d88f.bindPopup(popup_fef485f9a3ec37eb52575923bff6228a)
+        ;
+
+        
+    
+    
+            var circle_marker_974674c739c98811176a23931d3f1eb1 = L.circleMarker(
+                [38.2542376, -85.759407],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_8bfc5c72d56baa285cbdda4c1b937896 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5f79e768872189ebe65e08cf0d5bfd01 = $(`<div id="html_5f79e768872189ebe65e08cf0d5bfd01" style="width: 100.0%; height: 100.0%;"><b>Louisville</b><br><i>empty orchestra 1</i> (2012)</div>`)[0];
+                popup_8bfc5c72d56baa285cbdda4c1b937896.setContent(html_5f79e768872189ebe65e08cf0d5bfd01);
+            
+        
+
+        circle_marker_974674c739c98811176a23931d3f1eb1.bindPopup(popup_8bfc5c72d56baa285cbdda4c1b937896)
+        ;
+
+        
+    
+    
+            var circle_marker_17f63738d2a18c7f4c6ed78225b9fc47 = L.circleMarker(
+                [-28.8166236, 24.991639],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_8867c13b8a12c792fc902ed335fd8008 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7f9f0934eb891ea2cee8051c8f8e26b3 = $(`<div id="html_7f9f0934eb891ea2cee8051c8f8e26b3" style="width: 100.0%; height: 100.0%;"><b>South Africa</b><br><i>empty orchestra 1</i> (2012)</div>`)[0];
+                popup_8867c13b8a12c792fc902ed335fd8008.setContent(html_7f9f0934eb891ea2cee8051c8f8e26b3);
+            
+        
+
+        circle_marker_17f63738d2a18c7f4c6ed78225b9fc47.bindPopup(popup_8867c13b8a12c792fc902ed335fd8008)
+        ;
+
+        
+    
+    
+            var circle_marker_b74f4b2262b7e55025b671e9be9bca77 = L.circleMarker(
+                [34.5412252, 108.9237067],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_06072c7dd9bcd22b316f1a8f3a572ec0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_046327e1d1f8e616904cf7a7df7caa90 = $(`<div id="html_046327e1d1f8e616904cf7a7df7caa90" style="width: 100.0%; height: 100.0%;"><b>China</b><br><i>empty orchestra 1</i> (2012)</div>`)[0];
+                popup_06072c7dd9bcd22b316f1a8f3a572ec0.setContent(html_046327e1d1f8e616904cf7a7df7caa90);
+            
+        
+
+        circle_marker_b74f4b2262b7e55025b671e9be9bca77.bindPopup(popup_06072c7dd9bcd22b316f1a8f3a572ec0)
+        ;
+
+        
+    
+    
+            var circle_marker_d4e25687fc86ca8b8d2fde14c7674618 = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_a9bea817818154bb901c0d15f2eeb1fd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9de4417110f347f5acc8c431ee6a7405 = $(`<div id="html_9de4417110f347f5acc8c431ee6a7405" style="width: 100.0%; height: 100.0%;"><b>America</b><br><i>gaysi 1</i> (2011)</div>`)[0];
+                popup_a9bea817818154bb901c0d15f2eeb1fd.setContent(html_9de4417110f347f5acc8c431ee6a7405);
+            
+        
+
+        circle_marker_d4e25687fc86ca8b8d2fde14c7674618.bindPopup(popup_a9bea817818154bb901c0d15f2eeb1fd)
+        ;
+
+        
+    
+    
+            var circle_marker_2a1f4114e96d5a9e3072fc36af6acdee = L.circleMarker(
+                [17.3615965, 78.4276746],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_f1a0807c4ee8589a96658d879efcf32a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6a4d25d135779b382fed281cfe4e1d75 = $(`<div id="html_6a4d25d135779b382fed281cfe4e1d75" style="width: 100.0%; height: 100.0%;"><b>South India</b><br><i>gaysi 1</i> (2011)</div>`)[0];
+                popup_f1a0807c4ee8589a96658d879efcf32a.setContent(html_6a4d25d135779b382fed281cfe4e1d75);
+            
+        
+
+        circle_marker_2a1f4114e96d5a9e3072fc36af6acdee.bindPopup(popup_f1a0807c4ee8589a96658d879efcf32a)
+        ;
+
+        
+    
+    
+            var circle_marker_7565ffd96036510396999b5c6cc5fb58 = L.circleMarker(
+                [28.6138954, 77.2090057],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_0b373d3cc095e9a83683f7c455641198 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a3d600c81875a6a2f4b6a0ae56dec2aa = $(`<div id="html_a3d600c81875a6a2f4b6a0ae56dec2aa" style="width: 100.0%; height: 100.0%;"><b>Delhi</b><br><i>gaysi 1</i> (2011)</div>`)[0];
+                popup_0b373d3cc095e9a83683f7c455641198.setContent(html_a3d600c81875a6a2f4b6a0ae56dec2aa);
+            
+        
+
+        circle_marker_7565ffd96036510396999b5c6cc5fb58.bindPopup(popup_0b373d3cc095e9a83683f7c455641198)
+        ;
+
+        
+    
+    
+            var circle_marker_d9b663a94da06fb4affb9f2d11efd46b = L.circleMarker(
+                [22.3511148, 78.6677428],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_2e9cf6197b5da3d94904498bab96669d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6a81691326b60549d44d97efdefaea9e = $(`<div id="html_6a81691326b60549d44d97efdefaea9e" style="width: 100.0%; height: 100.0%;"><b>India</b><br><i>gaysi 1</i> (2011)</div>`)[0];
+                popup_2e9cf6197b5da3d94904498bab96669d.setContent(html_6a81691326b60549d44d97efdefaea9e);
+            
+        
+
+        circle_marker_d9b663a94da06fb4affb9f2d11efd46b.bindPopup(popup_2e9cf6197b5da3d94904498bab96669d)
+        ;
+
+        
+    
+    
+            var circle_marker_2538afc7c30dd35fa7d322ee4f542125 = L.circleMarker(
+                [-17.0568696, -64.9912286],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_4d206f8d607ee95f0ee346cd9579244e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3d10701e8c76873b99b0223ed2fd5bc7 = $(`<div id="html_3d10701e8c76873b99b0223ed2fd5bc7" style="width: 100.0%; height: 100.0%;"><b>Bolivia</b><br><i>gaysi 1</i> (2011)</div>`)[0];
+                popup_4d206f8d607ee95f0ee346cd9579244e.setContent(html_3d10701e8c76873b99b0223ed2fd5bc7);
+            
+        
+
+        circle_marker_2538afc7c30dd35fa7d322ee4f542125.bindPopup(popup_4d206f8d607ee95f0ee346cd9579244e)
+        ;
+
+        
+    
+    
+            var circle_marker_8c3e0f09a7fef2d2f20e7e7608b7ea40 = L.circleMarker(
+                [36.7014631, -118.755997],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_d5b7c4e8b207a772164449857d2ba705 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_89a2d639daf66c47890505d2612171ec = $(`<div id="html_89a2d639daf66c47890505d2612171ec" style="width: 100.0%; height: 100.0%;"><b>California</b><br><i>gaysi 1</i> (2011)</div>`)[0];
+                popup_d5b7c4e8b207a772164449857d2ba705.setContent(html_89a2d639daf66c47890505d2612171ec);
+            
+        
+
+        circle_marker_8c3e0f09a7fef2d2f20e7e7608b7ea40.bindPopup(popup_d5b7c4e8b207a772164449857d2ba705)
+        ;
+
+        
+    
+    
+            var circle_marker_b31b6079359f87c70820644f0bd15e07 = L.circleMarker(
+                [40.0796606, -89.4337288],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_3e787aba4b3b8d292b714ab1b2883d95 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_350b4190cae273cf59c4c47814da1e85 = $(`<div id="html_350b4190cae273cf59c4c47814da1e85" style="width: 100.0%; height: 100.0%;"><b>Illinois</b><br><i>gaysi 1</i> (2011)</div>`)[0];
+                popup_3e787aba4b3b8d292b714ab1b2883d95.setContent(html_350b4190cae273cf59c4c47814da1e85);
+            
+        
+
+        circle_marker_b31b6079359f87c70820644f0bd15e07.bindPopup(popup_3e787aba4b3b8d292b714ab1b2883d95)
+        ;
+
+        
+    
+    
+            var circle_marker_3318c59197c25f31413250b52eb606b9 = L.circleMarker(
+                [43.699971, -79.3325198],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_a50a77c6014134c2ed163a113cab0cf9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2fc8e207d4a35a1e0d9706a5959be08c = $(`<div id="html_2fc8e207d4a35a1e0d9706a5959be08c" style="width: 100.0%; height: 100.0%;"><b>East York</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_a50a77c6014134c2ed163a113cab0cf9.setContent(html_2fc8e207d4a35a1e0d9706a5959be08c);
+            
+        
+
+        circle_marker_3318c59197c25f31413250b52eb606b9.bindPopup(popup_a50a77c6014134c2ed163a113cab0cf9)
+        ;
+
+        
+    
+    
+            var circle_marker_6b4b17b3beaf44487040331677e5d87a = L.circleMarker(
+                [43.6534817, -79.3839347],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_e5ba7156b0d119309b2189602a138b73 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c5424bc688cad3d28f1a82c95529c722 = $(`<div id="html_c5424bc688cad3d28f1a82c95529c722" style="width: 100.0%; height: 100.0%;"><b>Toronto</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_e5ba7156b0d119309b2189602a138b73.setContent(html_c5424bc688cad3d28f1a82c95529c722);
+            
+        
+
+        circle_marker_6b4b17b3beaf44487040331677e5d87a.bindPopup(popup_e5ba7156b0d119309b2189602a138b73)
+        ;
+
+        
+    
+    
+            var circle_marker_57e0c8cbd1ec76010cb3db3671cd2067 = L.circleMarker(
+                [34.0980031, -118.329523],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_5a290708e176dc42621ecb7bf6945723 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5672892e6d651dbb9af22cfbb2ed7568 = $(`<div id="html_5672892e6d651dbb9af22cfbb2ed7568" style="width: 100.0%; height: 100.0%;"><b>Hollywood</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_5a290708e176dc42621ecb7bf6945723.setContent(html_5672892e6d651dbb9af22cfbb2ed7568);
+            
+        
+
+        circle_marker_57e0c8cbd1ec76010cb3db3671cd2067.bindPopup(popup_5a290708e176dc42621ecb7bf6945723)
+        ;
+
+        
+    
+    
+            var circle_marker_47e0e5af1482d4fe4b01f67a0e4e4b40 = L.circleMarker(
+                [52.865196, -7.9794599],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_c1ae680f086acf8bf72f0fdd3cea819c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_93a6891a459f81472ba9dca7964ad499 = $(`<div id="html_93a6891a459f81472ba9dca7964ad499" style="width: 100.0%; height: 100.0%;"><b>Ireland</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_c1ae680f086acf8bf72f0fdd3cea819c.setContent(html_93a6891a459f81472ba9dca7964ad499);
+            
+        
+
+        circle_marker_47e0e5af1482d4fe4b01f67a0e4e4b40.bindPopup(popup_c1ae680f086acf8bf72f0fdd3cea819c)
+        ;
+
+        
+    
+    
+            var circle_marker_bf70b0a1a28c7abb6d9389dfbef12c5e = L.circleMarker(
+                [27.7567667, -81.4639835],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_b30af7439aa5585aa193ba5f03107118 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9c92238ac7bf75afc45475dd0f912108 = $(`<div id="html_9c92238ac7bf75afc45475dd0f912108" style="width: 100.0%; height: 100.0%;"><b>Florida</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_b30af7439aa5585aa193ba5f03107118.setContent(html_9c92238ac7bf75afc45475dd0f912108);
+            
+        
+
+        circle_marker_bf70b0a1a28c7abb6d9389dfbef12c5e.bindPopup(popup_b30af7439aa5585aa193ba5f03107118)
+        ;
+
+        
+    
+    
+            var circle_marker_e55925d32b05911e8ed0e6b06cdee265 = L.circleMarker(
+                [45.5031824, -73.5698065],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_febcc43e511aedf72504ee68c1a2a294 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cebbce373b1e62af9afe1cd39df178bc = $(`<div id="html_cebbce373b1e62af9afe1cd39df178bc" style="width: 100.0%; height: 100.0%;"><b>Montreal</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_febcc43e511aedf72504ee68c1a2a294.setContent(html_cebbce373b1e62af9afe1cd39df178bc);
+            
+        
+
+        circle_marker_e55925d32b05911e8ed0e6b06cdee265.bindPopup(popup_febcc43e511aedf72504ee68c1a2a294)
+        ;
+
+        
+    
+    
+            var circle_marker_f4ecfc7a24df7d82b98847c43eea2301 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_acf375bb8799496f5568a6882cbb2b09 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cfe5b9cf7ae83c43032516f2f8a4d406 = $(`<div id="html_cfe5b9cf7ae83c43032516f2f8a4d406" style="width: 100.0%; height: 100.0%;"><b>New York City</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_acf375bb8799496f5568a6882cbb2b09.setContent(html_cfe5b9cf7ae83c43032516f2f8a4d406);
+            
+        
+
+        circle_marker_f4ecfc7a24df7d82b98847c43eea2301.bindPopup(popup_acf375bb8799496f5568a6882cbb2b09)
+        ;
+
+        
+    
+    
+            var circle_marker_3168db87e5fab3d7294e0aac6a9d1375 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_c6b8bde761138bf8129f5bc561b754f0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e9084c12825b0f87f0fb09b581c2ae9e = $(`<div id="html_e9084c12825b0f87f0fb09b581c2ae9e" style="width: 100.0%; height: 100.0%;"><b>New York</b><br><i>gender trash 1</i> (1993)</div>`)[0];
+                popup_c6b8bde761138bf8129f5bc561b754f0.setContent(html_e9084c12825b0f87f0fb09b581c2ae9e);
+            
+        
+
+        circle_marker_3168db87e5fab3d7294e0aac6a9d1375.bindPopup(popup_c6b8bde761138bf8129f5bc561b754f0)
+        ;
+
+        
+    
+    
+            var circle_marker_64357b6fd33bbb854f6dbfb5819d61c9 = L.circleMarker(
+                [32.2228765, -110.974847],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_b6e1793d4ab535bf9e5ec8c7d070820a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4dd9d84281396d752905127ceab21c87 = $(`<div id="html_4dd9d84281396d752905127ceab21c87" style="width: 100.0%; height: 100.0%;"><b>Tucson</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_b6e1793d4ab535bf9e5ec8c7d070820a.setContent(html_4dd9d84281396d752905127ceab21c87);
+            
+        
+
+        circle_marker_64357b6fd33bbb854f6dbfb5819d61c9.bindPopup(popup_b6e1793d4ab535bf9e5ec8c7d070820a)
+        ;
+
+        
+    
+    
+            var circle_marker_ccdf30ab54d524f1c61187a31b556ae0 = L.circleMarker(
+                [34.395342, -111.763275],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_5d30a241791c600c5f76ff7b629df3c8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1f92d05d6c28504dedb5938da35ab4a9 = $(`<div id="html_1f92d05d6c28504dedb5938da35ab4a9" style="width: 100.0%; height: 100.0%;"><b>Arizona</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_5d30a241791c600c5f76ff7b629df3c8.setContent(html_1f92d05d6c28504dedb5938da35ab4a9);
+            
+        
+
+        circle_marker_ccdf30ab54d524f1c61187a31b556ae0.bindPopup(popup_5d30a241791c600c5f76ff7b629df3c8)
+        ;
+
+        
+    
+    
+            var circle_marker_ff16ad987a50c853e2be09d0dab025ff = L.circleMarker(
+                [38.7251776, -105.607716],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_81d6a142eac91858659103d0c3195f5b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f65caefdf7fe7d29b1ea7a67de7fea74 = $(`<div id="html_f65caefdf7fe7d29b1ea7a67de7fea74" style="width: 100.0%; height: 100.0%;"><b>Colorado</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_81d6a142eac91858659103d0c3195f5b.setContent(html_f65caefdf7fe7d29b1ea7a67de7fea74);
+            
+        
+
+        circle_marker_ff16ad987a50c853e2be09d0dab025ff.bindPopup(popup_81d6a142eac91858659103d0c3195f5b)
+        ;
+
+        
+    
+    
+            var circle_marker_8501f77462aff113091880bc3cbbe510 = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_63c44bb6f1ce16c03293c9f6ab53081e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b098dc07969ac35166e86700cafb7cec = $(`<div id="html_b098dc07969ac35166e86700cafb7cec" style="width: 100.0%; height: 100.0%;"><b>America</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_63c44bb6f1ce16c03293c9f6ab53081e.setContent(html_b098dc07969ac35166e86700cafb7cec);
+            
+        
+
+        circle_marker_8501f77462aff113091880bc3cbbe510.bindPopup(popup_63c44bb6f1ce16c03293c9f6ab53081e)
+        ;
+
+        
+    
+    
+            var circle_marker_fd96e0b5f136cf36908a06c1e4c984d4 = L.circleMarker(
+                [51.1638175, 10.4478313],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_ef21a8331399e83bfcef0c301782d6af = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_91f71f51541e64e99a7028696e8152b4 = $(`<div id="html_91f71f51541e64e99a7028696e8152b4" style="width: 100.0%; height: 100.0%;"><b>Germany</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_ef21a8331399e83bfcef0c301782d6af.setContent(html_91f71f51541e64e99a7028696e8152b4);
+            
+        
+
+        circle_marker_fd96e0b5f136cf36908a06c1e4c984d4.bindPopup(popup_ef21a8331399e83bfcef0c301782d6af)
+        ;
+
+        
+    
+    
+            var circle_marker_296fe71c9254b875c9676a677426c92d = L.circleMarker(
+                [41.4996574, -81.6936772],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_d0b35cbe898ec2ce162074d13b654018 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_649c56c0f62e8a809793f2c647c194c5 = $(`<div id="html_649c56c0f62e8a809793f2c647c194c5" style="width: 100.0%; height: 100.0%;"><b>Cleveland</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_d0b35cbe898ec2ce162074d13b654018.setContent(html_649c56c0f62e8a809793f2c647c194c5);
+            
+        
+
+        circle_marker_296fe71c9254b875c9676a677426c92d.bindPopup(popup_d0b35cbe898ec2ce162074d13b654018)
+        ;
+
+        
+    
+    
+            var circle_marker_fb4c2cfddb741d1cfe001ea86b60b646 = L.circleMarker(
+                [40.2253569, -82.6881395],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_f9abd219c909aa9d884a2234e01448a5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_66d80f8c1f33b1a5f9ae5474a5160b87 = $(`<div id="html_66d80f8c1f33b1a5f9ae5474a5160b87" style="width: 100.0%; height: 100.0%;"><b>Ohio</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_f9abd219c909aa9d884a2234e01448a5.setContent(html_66d80f8c1f33b1a5f9ae5474a5160b87);
+            
+        
+
+        circle_marker_fb4c2cfddb741d1cfe001ea86b60b646.bindPopup(popup_f9abd219c909aa9d884a2234e01448a5)
+        ;
+
+        
+    
+    
+            var circle_marker_7279ec9b66982e27c251f4ef1e7a0df5 = L.circleMarker(
+                [37.5726028, -85.1551411],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_6f28499127536d7258e36fcaec83dc06 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_59ad2b4359c41da616bc3f48237cfbaa = $(`<div id="html_59ad2b4359c41da616bc3f48237cfbaa" style="width: 100.0%; height: 100.0%;"><b>Kentucky</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_6f28499127536d7258e36fcaec83dc06.setContent(html_59ad2b4359c41da616bc3f48237cfbaa);
+            
+        
+
+        circle_marker_7279ec9b66982e27c251f4ef1e7a0df5.bindPopup(popup_6f28499127536d7258e36fcaec83dc06)
+        ;
+
+        
+    
+    
+            var circle_marker_154af5893185d5b8446ea6f3b4c7bf27 = L.circleMarker(
+                [41.8755616, -87.6244212],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_af7daeead2fd69f39d31386766e4c6f4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_43f5a6fc87a90594e6c7722ec1d70057 = $(`<div id="html_43f5a6fc87a90594e6c7722ec1d70057" style="width: 100.0%; height: 100.0%;"><b>Chicago</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_af7daeead2fd69f39d31386766e4c6f4.setContent(html_43f5a6fc87a90594e6c7722ec1d70057);
+            
+        
+
+        circle_marker_154af5893185d5b8446ea6f3b4c7bf27.bindPopup(popup_af7daeead2fd69f39d31386766e4c6f4)
+        ;
+
+        
+    
+    
+            var circle_marker_8f8792852af7991e661147762e6c3c55 = L.circleMarker(
+                [35.9131542, -79.05578],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_db2c63b4ee4ca9b6b7e8d86284335b35 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9820ecacfa843630c3f4dd3737863054 = $(`<div id="html_9820ecacfa843630c3f4dd3737863054" style="width: 100.0%; height: 100.0%;"><b>Chapel Hill</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_db2c63b4ee4ca9b6b7e8d86284335b35.setContent(html_9820ecacfa843630c3f4dd3737863054);
+            
+        
+
+        circle_marker_8f8792852af7991e661147762e6c3c55.bindPopup(popup_db2c63b4ee4ca9b6b7e8d86284335b35)
+        ;
+
+        
+    
+    
+            var circle_marker_bbea4e3d6b8cd15cdb91b1e896790880 = L.circleMarker(
+                [-41.5000831, 172.8344077],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_8b843880b968f32cf565bc63e669363d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_553844f6842901018e6f458051da9df6 = $(`<div id="html_553844f6842901018e6f458051da9df6" style="width: 100.0%; height: 100.0%;"><b>New Zealand</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_8b843880b968f32cf565bc63e669363d.setContent(html_553844f6842901018e6f458051da9df6);
+            
+        
+
+        circle_marker_bbea4e3d6b8cd15cdb91b1e896790880.bindPopup(popup_8b843880b968f32cf565bc63e669363d)
+        ;
+
+        
+    
+    
+            var circle_marker_98894284f418dca3ebafb603c4b984f3 = L.circleMarker(
+                [-1.45056, -48.4682453],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_6c69ea37f51e870cd5a92bb038a5e98e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4605beb830a2d334a74376ca5ab03c85 = $(`<div id="html_4605beb830a2d334a74376ca5ab03c85" style="width: 100.0%; height: 100.0%;"><b>Bethlehem</b><br><i>going homo 3</i> (1994)</div>`)[0];
+                popup_6c69ea37f51e870cd5a92bb038a5e98e.setContent(html_4605beb830a2d334a74376ca5ab03c85);
+            
+        
+
+        circle_marker_98894284f418dca3ebafb603c4b984f3.bindPopup(popup_6c69ea37f51e870cd5a92bb038a5e98e)
+        ;
+
+        
+    
+    
+            var circle_marker_d9aa7b238f737f9f91af187c83f81840 = L.circleMarker(
+                [32.7355816, -97.1071186],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_4f7fba5e0793d16a92c20cf49cad8e24 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1f24b5e5705c8865dcb99072bec00b16 = $(`<div id="html_1f24b5e5705c8865dcb99072bec00b16" style="width: 100.0%; height: 100.0%;"><b>Arlington</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_4f7fba5e0793d16a92c20cf49cad8e24.setContent(html_1f24b5e5705c8865dcb99072bec00b16);
+            
+        
+
+        circle_marker_d9aa7b238f737f9f91af187c83f81840.bindPopup(popup_4f7fba5e0793d16a92c20cf49cad8e24)
+        ;
+
+        
+    
+    
+            var circle_marker_edd0081f6e1122fa149190fcacb5a172 = L.circleMarker(
+                [37.5385087, -77.43428],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_b312a454e5fa3f9be07090b0ea85f245 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e752381361f801d3d374b7f088fd695c = $(`<div id="html_e752381361f801d3d374b7f088fd695c" style="width: 100.0%; height: 100.0%;"><b>Richmond</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_b312a454e5fa3f9be07090b0ea85f245.setContent(html_e752381361f801d3d374b7f088fd695c);
+            
+        
+
+        circle_marker_edd0081f6e1122fa149190fcacb5a172.bindPopup(popup_b312a454e5fa3f9be07090b0ea85f245)
+        ;
+
+        
+    
+    
+            var circle_marker_f2b6a1a54ba4007e06d3e10350efac56 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_4cb20be48fcfa6d86eb1518d7bacbd1a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3d3df03c950f29fa5d253e14def6e25e = $(`<div id="html_3d3df03c950f29fa5d253e14def6e25e" style="width: 100.0%; height: 100.0%;"><b>Italy</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_4cb20be48fcfa6d86eb1518d7bacbd1a.setContent(html_3d3df03c950f29fa5d253e14def6e25e);
+            
+        
+
+        circle_marker_f2b6a1a54ba4007e06d3e10350efac56.bindPopup(popup_4cb20be48fcfa6d86eb1518d7bacbd1a)
+        ;
+
+        
+    
+    
+            var circle_marker_4d9e66922ddb69ebfec9e5d8b8ee5420 = L.circleMarker(
+                [49.2608724, -123.113952],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_c09446e158d13353f32388e4123d2cbb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_77aa7b8fbe9ce4fdf0b21b83f4746292 = $(`<div id="html_77aa7b8fbe9ce4fdf0b21b83f4746292" style="width: 100.0%; height: 100.0%;"><b>Vancouver</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_c09446e158d13353f32388e4123d2cbb.setContent(html_77aa7b8fbe9ce4fdf0b21b83f4746292);
+            
+        
+
+        circle_marker_4d9e66922ddb69ebfec9e5d8b8ee5420.bindPopup(popup_c09446e158d13353f32388e4123d2cbb)
+        ;
+
+        
+    
+    
+            var circle_marker_fa5113a947023d68dc02787c3751858b = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_5eba8e1db283813400a3e2841c77178a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c99fc98d7edce20ebf3e7149cdfeb5c9 = $(`<div id="html_c99fc98d7edce20ebf3e7149cdfeb5c9" style="width: 100.0%; height: 100.0%;"><b>New York</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_5eba8e1db283813400a3e2841c77178a.setContent(html_c99fc98d7edce20ebf3e7149cdfeb5c9);
+            
+        
+
+        circle_marker_fa5113a947023d68dc02787c3751858b.bindPopup(popup_5eba8e1db283813400a3e2841c77178a)
+        ;
+
+        
+    
+    
+            var circle_marker_798cff2f0940a99290a8e194ba348846 = L.circleMarker(
+                [41.5623178, -72.6509061],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_7f16852ea20aadb26cfda99f94c1bb65 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f3702890d24d965bdda57742ef483772 = $(`<div id="html_f3702890d24d965bdda57742ef483772" style="width: 100.0%; height: 100.0%;"><b>Middletown</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_7f16852ea20aadb26cfda99f94c1bb65.setContent(html_f3702890d24d965bdda57742ef483772);
+            
+        
+
+        circle_marker_798cff2f0940a99290a8e194ba348846.bindPopup(popup_7f16852ea20aadb26cfda99f94c1bb65)
+        ;
+
+        
+    
+    
+            var circle_marker_528a14c0a8507083ff65b7d02883cca1 = L.circleMarker(
+                [45.5202471, -122.674194],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_1e26606bea21eb89e617a8d90efbd2d8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a3b5c63bfeb5919e87138135a93acd0e = $(`<div id="html_a3b5c63bfeb5919e87138135a93acd0e" style="width: 100.0%; height: 100.0%;"><b>Portland</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_1e26606bea21eb89e617a8d90efbd2d8.setContent(html_a3b5c63bfeb5919e87138135a93acd0e);
+            
+        
+
+        circle_marker_528a14c0a8507083ff65b7d02883cca1.bindPopup(popup_1e26606bea21eb89e617a8d90efbd2d8)
+        ;
+
+        
+    
+    
+            var circle_marker_986a0d485bdadb8dadaacbb2c6c34af9 = L.circleMarker(
+                [32.2228765, -110.974847],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_f5fbdcadc6c9f73402ed60121960e09a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5477f48db996fc19b25d924cc44a7902 = $(`<div id="html_5477f48db996fc19b25d924cc44a7902" style="width: 100.0%; height: 100.0%;"><b>Tucson</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_f5fbdcadc6c9f73402ed60121960e09a.setContent(html_5477f48db996fc19b25d924cc44a7902);
+            
+        
+
+        circle_marker_986a0d485bdadb8dadaacbb2c6c34af9.bindPopup(popup_f5fbdcadc6c9f73402ed60121960e09a)
+        ;
+
+        
+    
+    
+            var circle_marker_95e1dce3f4fe27522988ec87c991b67a = L.circleMarker(
+                [46.7985624, 8.2319736],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_aa5aff5aae804f2659c1963970ab786e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eb4404fa10e49b9b29345cd3bbccfadb = $(`<div id="html_eb4404fa10e49b9b29345cd3bbccfadb" style="width: 100.0%; height: 100.0%;"><b>Switzerland</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_aa5aff5aae804f2659c1963970ab786e.setContent(html_eb4404fa10e49b9b29345cd3bbccfadb);
+            
+        
+
+        circle_marker_95e1dce3f4fe27522988ec87c991b67a.bindPopup(popup_aa5aff5aae804f2659c1963970ab786e)
+        ;
+
+        
+    
+    
+            var circle_marker_1caf74ca88c89a46e631d5ae4798c707 = L.circleMarker(
+                [43.6534817, -79.3839347],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_ec2444c219dc1c9061936f0960eacab4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5ba8f20fddb9bd858a4987f5b4314b2a = $(`<div id="html_5ba8f20fddb9bd858a4987f5b4314b2a" style="width: 100.0%; height: 100.0%;"><b>Toronto</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_ec2444c219dc1c9061936f0960eacab4.setContent(html_5ba8f20fddb9bd858a4987f5b4314b2a);
+            
+        
+
+        circle_marker_1caf74ca88c89a46e631d5ae4798c707.bindPopup(popup_ec2444c219dc1c9061936f0960eacab4)
+        ;
+
+        
+    
+    
+            var circle_marker_9a74a2269f1d711e397339f6bcefa907 = L.circleMarker(
+                [52.1975846, 0.1391537],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_7bb47d31dbe9db03cce7a26ced606350 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f25f965b1db2236bf9e35c2405f40b8d = $(`<div id="html_f25f965b1db2236bf9e35c2405f40b8d" style="width: 100.0%; height: 100.0%;"><b>Cambridge</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_7bb47d31dbe9db03cce7a26ced606350.setContent(html_f25f965b1db2236bf9e35c2405f40b8d);
+            
+        
+
+        circle_marker_9a74a2269f1d711e397339f6bcefa907.bindPopup(popup_7bb47d31dbe9db03cce7a26ced606350)
+        ;
+
+        
+    
+    
+            var circle_marker_4e3264af08524e040a379e7e00ddbc0f = L.circleMarker(
+                [44.9772995, -93.2654692],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_b0db9156bbddbfafa269373485f7c0f0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a5e0cf32b53873040694ca7a6451b1cc = $(`<div id="html_a5e0cf32b53873040694ca7a6451b1cc" style="width: 100.0%; height: 100.0%;"><b>Minneapolis</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_b0db9156bbddbfafa269373485f7c0f0.setContent(html_a5e0cf32b53873040694ca7a6451b1cc);
+            
+        
+
+        circle_marker_4e3264af08524e040a379e7e00ddbc0f.bindPopup(popup_b0db9156bbddbfafa269373485f7c0f0)
+        ;
+
+        
+    
+    
+            var circle_marker_41e8dce93b8ade1cb79d9b477b2562ff = L.circleMarker(
+                [39.294076, 35.2316631],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_dbedbd1f3e307578f116272921f2ac40 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a337f65e8c93a1fcbf77e9cc8cbb9d9b = $(`<div id="html_a337f65e8c93a1fcbf77e9cc8cbb9d9b" style="width: 100.0%; height: 100.0%;"><b>Turkey</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_dbedbd1f3e307578f116272921f2ac40.setContent(html_a337f65e8c93a1fcbf77e9cc8cbb9d9b);
+            
+        
+
+        circle_marker_41e8dce93b8ade1cb79d9b477b2562ff.bindPopup(popup_dbedbd1f3e307578f116272921f2ac40)
+        ;
+
+        
+    
+    
+            var circle_marker_2c2c9651695c8f9663b73b7c1ed10fc6 = L.circleMarker(
+                [51.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_dc644bf554d0d88f1f70e2520aaee8d7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d9f754830c696d60cab6228b63b98939 = $(`<div id="html_d9f754830c696d60cab6228b63b98939" style="width: 100.0%; height: 100.0%;"><b>Europe</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_dc644bf554d0d88f1f70e2520aaee8d7.setContent(html_d9f754830c696d60cab6228b63b98939);
+            
+        
+
+        circle_marker_2c2c9651695c8f9663b73b7c1ed10fc6.bindPopup(popup_dc644bf554d0d88f1f70e2520aaee8d7)
+        ;
+
+        
+    
+    
+            var circle_marker_3c1bdfbb99e6664d457b87edaf34ac87 = L.circleMarker(
+                [52.4760892, -71.8258668],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_0ac6bcf19ffea34fe6b94b48f691a613 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5192e91608aa5ce6a43e1509e25b1822 = $(`<div id="html_5192e91608aa5ce6a43e1509e25b1822" style="width: 100.0%; height: 100.0%;"><b>Quebec</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_0ac6bcf19ffea34fe6b94b48f691a613.setContent(html_5192e91608aa5ce6a43e1509e25b1822);
+            
+        
+
+        circle_marker_3c1bdfbb99e6664d457b87edaf34ac87.bindPopup(popup_0ac6bcf19ffea34fe6b94b48f691a613)
+        ;
+
+        
+    
+    
+            var circle_marker_a34efb6e2b96b7d7b1c5f60a088d9de3 = L.circleMarker(
+                [17.9712148, -76.7928128],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_e112b00d22a773e7201a535c4277e8e1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_551d96551b2d0a23b5330cb72186084e = $(`<div id="html_551d96551b2d0a23b5330cb72186084e" style="width: 100.0%; height: 100.0%;"><b>Kingston</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_e112b00d22a773e7201a535c4277e8e1.setContent(html_551d96551b2d0a23b5330cb72186084e);
+            
+        
+
+        circle_marker_a34efb6e2b96b7d7b1c5f60a088d9de3.bindPopup(popup_e112b00d22a773e7201a535c4277e8e1)
+        ;
+
+        
+    
+    
+            var circle_marker_cba8af7cb8657b35228c531d898e7268 = L.circleMarker(
+                [29.3872254, -94.992736],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_2ea5507ff3a182b9686660fc73e379cb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4a57cef292d76a5c8f93168b5d6d46ab = $(`<div id="html_4a57cef292d76a5c8f93168b5d6d46ab" style="width: 100.0%; height: 100.0%;"><b>Galveston</b><br><i>queer zine explosion 20</i> (2003)</div>`)[0];
+                popup_2ea5507ff3a182b9686660fc73e379cb.setContent(html_4a57cef292d76a5c8f93168b5d6d46ab);
+            
+        
+
+        circle_marker_cba8af7cb8657b35228c531d898e7268.bindPopup(popup_2ea5507ff3a182b9686660fc73e379cb)
+        ;
+
+        
+    
+    
+            var circle_marker_b9951c868776209277b4744e595998b6 = L.circleMarker(
+                [51.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_c7faa13a9bb681e72b54ce8272cce292 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c15f518b4989e9e64afa2c0381bf7f74 = $(`<div id="html_c15f518b4989e9e64afa2c0381bf7f74" style="width: 100.0%; height: 100.0%;"><b>Europe</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_c7faa13a9bb681e72b54ce8272cce292.setContent(html_c15f518b4989e9e64afa2c0381bf7f74);
+            
+        
+
+        circle_marker_b9951c868776209277b4744e595998b6.bindPopup(popup_c7faa13a9bb681e72b54ce8272cce292)
+        ;
+
+        
+    
+    
+            var circle_marker_e866d5f547a47c22f38c1fba90ed6611 = L.circleMarker(
+                [52.215933, 19.134422],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_54329dd0709c8bef3c1b29e37299c750 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ea04aa0d4891235481b5923a4b9ea469 = $(`<div id="html_ea04aa0d4891235481b5923a4b9ea469" style="width: 100.0%; height: 100.0%;"><b>Poland</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_54329dd0709c8bef3c1b29e37299c750.setContent(html_ea04aa0d4891235481b5923a4b9ea469);
+            
+        
+
+        circle_marker_e866d5f547a47c22f38c1fba90ed6611.bindPopup(popup_54329dd0709c8bef3c1b29e37299c750)
+        ;
+
+        
+    
+    
+            var circle_marker_ea9127773d6101cdcfadfa6a85701fb7 = L.circleMarker(
+                [46.603354, 1.8883335],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_247bd83b6d9addcb68f5a67c08890336 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5a1e060422734faf9fce04d5307929d2 = $(`<div id="html_5a1e060422734faf9fce04d5307929d2" style="width: 100.0%; height: 100.0%;"><b>France</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_247bd83b6d9addcb68f5a67c08890336.setContent(html_5a1e060422734faf9fce04d5307929d2);
+            
+        
+
+        circle_marker_ea9127773d6101cdcfadfa6a85701fb7.bindPopup(popup_247bd83b6d9addcb68f5a67c08890336)
+        ;
+
+        
+    
+    
+            var circle_marker_05e87a12ba3f216b54752adb9ff69fa2 = L.circleMarker(
+                [39.3260685, -4.8379791],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_ea2ef65d0a4f9ae81660586f92def238 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9d3ebd3c58a96068bc6a9f76f0974685 = $(`<div id="html_9d3ebd3c58a96068bc6a9f76f0974685" style="width: 100.0%; height: 100.0%;"><b>Spain</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_ea2ef65d0a4f9ae81660586f92def238.setContent(html_9d3ebd3c58a96068bc6a9f76f0974685);
+            
+        
+
+        circle_marker_05e87a12ba3f216b54752adb9ff69fa2.bindPopup(popup_ea2ef65d0a4f9ae81660586f92def238)
+        ;
+
+        
+    
+    
+            var circle_marker_48e3da45bba3d782ec7ffcedd1522aac = L.circleMarker(
+                [42.3315509, -83.0466403],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_7823ffd81813a15b81d49230b0521ece = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_728495f0679b19c0ee1b2f2f04d29b4c = $(`<div id="html_728495f0679b19c0ee1b2f2f04d29b4c" style="width: 100.0%; height: 100.0%;"><b>Detroit</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_7823ffd81813a15b81d49230b0521ece.setContent(html_728495f0679b19c0ee1b2f2f04d29b4c);
+            
+        
+
+        circle_marker_48e3da45bba3d782ec7ffcedd1522aac.bindPopup(popup_7823ffd81813a15b81d49230b0521ece)
+        ;
+
+        
+    
+    
+            var circle_marker_f751224e272f4bdc45d617f7f84d579c = L.circleMarker(
+                [48.8534951, 2.3483915],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_741c974bd41423bd07f264b844fe1543 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_38d53046b7b7fe60aef89da6fa7f371a = $(`<div id="html_38d53046b7b7fe60aef89da6fa7f371a" style="width: 100.0%; height: 100.0%;"><b>Paris</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_741c974bd41423bd07f264b844fe1543.setContent(html_38d53046b7b7fe60aef89da6fa7f371a);
+            
+        
+
+        circle_marker_f751224e272f4bdc45d617f7f84d579c.bindPopup(popup_741c974bd41423bd07f264b844fe1543)
+        ;
+
+        
+    
+    
+            var circle_marker_5a48b91bab10560616f2734103ad0d22 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_9ab1e1226c3cf2673d4473bf7b6505fa = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_90a75a4c65501fb3cb8308addd734185 = $(`<div id="html_90a75a4c65501fb3cb8308addd734185" style="width: 100.0%; height: 100.0%;"><b>New York</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_9ab1e1226c3cf2673d4473bf7b6505fa.setContent(html_90a75a4c65501fb3cb8308addd734185);
+            
+        
+
+        circle_marker_5a48b91bab10560616f2734103ad0d22.bindPopup(popup_9ab1e1226c3cf2673d4473bf7b6505fa)
+        ;
+
+        
+    
+    
+            var circle_marker_cc7b8b21e2af478adcd9fc464955f85e = L.circleMarker(
+                [26.2540493, 29.2675469],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_ced8c4926559da863fb4f49267e7aa64 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_de702dbb09bfc98013958572cc32b309 = $(`<div id="html_de702dbb09bfc98013958572cc32b309" style="width: 100.0%; height: 100.0%;"><b>Egypt</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_ced8c4926559da863fb4f49267e7aa64.setContent(html_de702dbb09bfc98013958572cc32b309);
+            
+        
+
+        circle_marker_cc7b8b21e2af478adcd9fc464955f85e.bindPopup(popup_ced8c4926559da863fb4f49267e7aa64)
+        ;
+
+        
+    
+    
+            var circle_marker_f02bb17e7f96eba756b90fe9f84c3b28 = L.circleMarker(
+                [30.8124247, 34.8594762],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_be92d99ebf2b092d6ba6d3d5fedcba92 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f9d61926c93b7d169924247c89f21e56 = $(`<div id="html_f9d61926c93b7d169924247c89f21e56" style="width: 100.0%; height: 100.0%;"><b>Israel</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_be92d99ebf2b092d6ba6d3d5fedcba92.setContent(html_f9d61926c93b7d169924247c89f21e56);
+            
+        
+
+        circle_marker_f02bb17e7f96eba756b90fe9f84c3b28.bindPopup(popup_be92d99ebf2b092d6ba6d3d5fedcba92)
+        ;
+
+        
+    
+    
+            var circle_marker_c7d78f76a9a0cee496f93f85bab6a562 = L.circleMarker(
+                [-33.8222153, 25.6274003],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_3e45403bfff04bd7880a6c3f06e1f493 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7b4f4cfb004843aa058fe3932b014400 = $(`<div id="html_7b4f4cfb004843aa058fe3932b014400" style="width: 100.0%; height: 100.0%;"><b>Eastern Europe</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_3e45403bfff04bd7880a6c3f06e1f493.setContent(html_7b4f4cfb004843aa058fe3932b014400);
+            
+        
+
+        circle_marker_c7d78f76a9a0cee496f93f85bab6a562.bindPopup(popup_3e45403bfff04bd7880a6c3f06e1f493)
+        ;
+
+        
+    
+    
+            var circle_marker_778ca6e2e750693d1f109cd21d018a81 = L.circleMarker(
+                [41.362599, 2.159665],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_ad55e6490211bfc218dbe0410ec6c372 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e3ed2a619e35d7a82ca880439361cd85 = $(`<div id="html_e3ed2a619e35d7a82ca880439361cd85" style="width: 100.0%; height: 100.0%;"><b>North Africa</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_ad55e6490211bfc218dbe0410ec6c372.setContent(html_e3ed2a619e35d7a82ca880439361cd85);
+            
+        
+
+        circle_marker_778ca6e2e750693d1f109cd21d018a81.bindPopup(popup_ad55e6490211bfc218dbe0410ec6c372)
+        ;
+
+        
+    
+    
+            var circle_marker_d5ad1567b1b78391900d2e99742dbbdb = L.circleMarker(
+                [28.3347722, -10.3713379],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_c3d713bf62c1212e4a2cc1f8283eaa4a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0bce4ad4ac323bbdf1f1f027b704c6a2 = $(`<div id="html_0bce4ad4ac323bbdf1f1f027b704c6a2" style="width: 100.0%; height: 100.0%;"><b>Morocco</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_c3d713bf62c1212e4a2cc1f8283eaa4a.setContent(html_0bce4ad4ac323bbdf1f1f027b704c6a2);
+            
+        
+
+        circle_marker_d5ad1567b1b78391900d2e99742dbbdb.bindPopup(popup_c3d713bf62c1212e4a2cc1f8283eaa4a)
+        ;
+
+        
+    
+    
+            var circle_marker_00168558f4beafd80c902800daa5a619 = L.circleMarker(
+                [39.294076, 35.2316631],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_6bf215df6ed6c0f520c96b17cef44597 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ed8cd9979643b1542567caa37430e351 = $(`<div id="html_ed8cd9979643b1542567caa37430e351" style="width: 100.0%; height: 100.0%;"><b>Turkey</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_6bf215df6ed6c0f520c96b17cef44597.setContent(html_ed8cd9979643b1542567caa37430e351);
+            
+        
+
+        circle_marker_00168558f4beafd80c902800daa5a619.bindPopup(popup_6bf215df6ed6c0f520c96b17cef44597)
+        ;
+
+        
+    
+    
+            var circle_marker_dfe927ff16d2ac2467193c6c9a3587d5 = L.circleMarker(
+                [38.9953683, 21.9877132],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_c38fedb3fedb73c998fa9c11fe151f6c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_89e6e19631681d873cc4c68998b29c7f = $(`<div id="html_89e6e19631681d873cc4c68998b29c7f" style="width: 100.0%; height: 100.0%;"><b>Greece</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_c38fedb3fedb73c998fa9c11fe151f6c.setContent(html_89e6e19631681d873cc4c68998b29c7f);
+            
+        
+
+        circle_marker_dfe927ff16d2ac2467193c6c9a3587d5.bindPopup(popup_c38fedb3fedb73c998fa9c11fe151f6c)
+        ;
+
+        
+    
+    
+            var circle_marker_d35bc3d010dda2c9265fc81e6e801f60 = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_6952a0b3a641f3bff608b60caf2b2d96 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_54590eecdcfeaa00615b4147358183fc = $(`<div id="html_54590eecdcfeaa00615b4147358183fc" style="width: 100.0%; height: 100.0%;"><b>United States</b><br><i>timtum - a trans jew zine</i> (1999)</div>`)[0];
+                popup_6952a0b3a641f3bff608b60caf2b2d96.setContent(html_54590eecdcfeaa00615b4147358183fc);
+            
+        
+
+        circle_marker_d35bc3d010dda2c9265fc81e6e801f60.bindPopup(popup_6952a0b3a641f3bff608b60caf2b2d96)
+        ;
+
+        
+    
+    
+            var circle_marker_9283fd12ada2ad33bc3a98129b2329d1 = L.circleMarker(
+                [42.6112398, -73.7607546],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_62c455283b6ab1cf6f4fd0db757a4adb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c6f63b2cba2f3c3b6ca0d2b8ebaf1236 = $(`<div id="html_c6f63b2cba2f3c3b6ca0d2b8ebaf1236" style="width: 100.0%; height: 100.0%;"><b>Hudson River</b><br><i>we have always existed transgender people through history</i> (2022)</div>`)[0];
+                popup_62c455283b6ab1cf6f4fd0db757a4adb.setContent(html_c6f63b2cba2f3c3b6ca0d2b8ebaf1236);
+            
+        
+
+        circle_marker_9283fd12ada2ad33bc3a98129b2329d1.bindPopup(popup_62c455283b6ab1cf6f4fd0db757a4adb)
+        ;
+
+        
+    
+    
+            var circle_marker_d90155c42de8363fd9a1b10632d346b6 = L.circleMarker(
+                [4.5693754, 102.2656823],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_02c2d340a4dcab00604c3f6a55b0c328 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3a4398fe79eb6c0715fe1cbd7e0a024a = $(`<div id="html_3a4398fe79eb6c0715fe1cbd7e0a024a" style="width: 100.0%; height: 100.0%;"><b>Malaysia</b><br><i>we have always existed transgender people through history</i> (2022)</div>`)[0];
+                popup_02c2d340a4dcab00604c3f6a55b0c328.setContent(html_3a4398fe79eb6c0715fe1cbd7e0a024a);
+            
+        
+
+        circle_marker_d90155c42de8363fd9a1b10632d346b6.bindPopup(popup_02c2d340a4dcab00604c3f6a55b0c328)
+        ;
+
+        
+    
+    
+            var circle_marker_1d159b8163341a908da44e2d4ab8e9c2 = L.circleMarker(
+                [22.3511148, 78.6677428],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_98d59442fb48c5f24a9d4722ce2b11e2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f8841685a4d458f45eeb18ef4b3089bf = $(`<div id="html_f8841685a4d458f45eeb18ef4b3089bf" style="width: 100.0%; height: 100.0%;"><b>India</b><br><i>we have always existed transgender people through history</i> (2022)</div>`)[0];
+                popup_98d59442fb48c5f24a9d4722ce2b11e2.setContent(html_f8841685a4d458f45eeb18ef4b3089bf);
+            
+        
+
+        circle_marker_1d159b8163341a908da44e2d4ab8e9c2.bindPopup(popup_98d59442fb48c5f24a9d4722ce2b11e2)
+        ;
+
+        
+    
+    
+            var circle_marker_3271ae6c4530974fc4cccd1cefccf5d6 = L.circleMarker(
+                [31.2638905, -98.5456116],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_8019306c01407a42004b07ddac8b6e86 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a2f2b446092f5ae77ecec9df5a4c8f73 = $(`<div id="html_a2f2b446092f5ae77ecec9df5a4c8f73" style="width: 100.0%; height: 100.0%;"><b>Texas</b><br><i>we have always existed transgender people through history</i> (2022)</div>`)[0];
+                popup_8019306c01407a42004b07ddac8b6e86.setContent(html_a2f2b446092f5ae77ecec9df5a4c8f73);
+            
+        
+
+        circle_marker_3271ae6c4530974fc4cccd1cefccf5d6.bindPopup(popup_8019306c01407a42004b07ddac8b6e86)
+        ;
+
+        
+    
+    
+            var circle_marker_4e9c5f81ae8b564be56126df26fe3c54 = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_6ecf7b1849c790f54062df6c955de52e);
+        
+    
+        var popup_951f1d12d9048663dd2412d42b310113 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_bc198f83209c97f23d16583d5099e768 = $(`<div id="html_bc198f83209c97f23d16583d5099e768" style="width: 100.0%; height: 100.0%;"><b>United States</b><br><i>we have always existed transgender people through history</i> (2022)</div>`)[0];
+                popup_951f1d12d9048663dd2412d42b310113.setContent(html_bc198f83209c97f23d16583d5099e768);
+            
+        
+
+        circle_marker_4e9c5f81ae8b564be56126df26fe3c54.bindPopup(popup_951f1d12d9048663dd2412d42b310113)
+        ;
+
+        
+    
+</script>
+</html>
